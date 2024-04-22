@@ -3,6 +3,11 @@
 This is OX-Target UI Updated by mayank__
 Video :- [Demo Video](https://www.youtube.com/watch?v=fLl6vK991u0)
 
+images-
+https://cdn.discordapp.com/attachments/1168776653741232128/1231994589326479420/image.png?ex=6638fb5f&is=6626865f&hm=411d8e1afc2f55212ea9a4bd707452024336487e216a034349b59c3bd0c67f8c&
+https://cdn.discordapp.com/attachments/1168776653741232128/1231994641805475870/image.png?ex=6638fb6b&is=6626866b&hm=0e71673d43730c27c3854c24a23ba05d0fcd823c16ecd47b81dcb923d751f537&
+https://cdn.discordapp.com/attachments/1168776653741232128/1231994709266923560/image.png?ex=6638fb7c&is=6626867c&hm=5f9a09208abf1a69e40ffd0d19aa85d5f8d4ab46046189481e24586536c4cc8a&
+
 ![](https://img.shields.io/github/downloads/overextended/ox_target/total?logo=github)
 ![](https://img.shields.io/github/downloads/overextended/ox_target/latest/total?logo=github)
 ![](https://img.shields.io/github/contributors/overextended/ox_target?logo=github)
