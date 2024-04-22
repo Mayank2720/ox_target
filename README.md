@@ -1,5 +1,8 @@
 # ox_target
 
+This is OX-Target UI Updated by mayank__
+Video :- [Demo Video](https://www.youtube.com/watch?v=fLl6vK991u0)
+
 ![](https://img.shields.io/github/downloads/overextended/ox_target/total?logo=github)
 ![](https://img.shields.io/github/downloads/overextended/ox_target/latest/total?logo=github)
 ![](https://img.shields.io/github/contributors/overextended/ox_target?logo=github)
