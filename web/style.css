@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --color-default: #cfd2da;
+  --color-default: #d9dde6;
   --color-hover: white;
 }
 
@@ -28,17 +28,51 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22pt;
-  fill: black;
 }
 
 .eye-hover {
-  fill: var(--color-default);
+  stroke: #ff0000;
+  animation: eye-blink 1.2s infinite ease-in-out;  
+}
+
+@keyframes eye-blink {
+  0% {
+    transform: scale(1, .05); 
+    animation-timing-function: ease-in;
+  }
+  5% {
+    transform: scale(1, 1);
+  }
+  55% {
+    transform: scale(1, 1);
+    animation-timing-function: ease-out; 
+  }
+  95% {
+    transform: scale(1, 1);
+    animation-timing-function: ease-out; 
+  }
+  100% {
+    transform: scale(1, .05);
+    animation-timing-function: ease-in-out; 
+  }
+}
+
+#dot::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 9999;
+  content: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20xml%3Aspace%3D%22preserve%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20stroke%3D%22%23000%22%20stroke-width%3D%2215%22%3E%3Cg%20stroke-width%3D%220%22%2F%3E%3Cg%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M112.3%20426.8H49V383c0-4.4-3.6-8-8-8s-8%203.6-8%208v51.8c0%204.4%203.6%208%208%208h71.3c4.4%200%208-3.6%208-8s-3.6-8-8-8zM41%20137c4.4%200%208-3.6%208-8V85.2h63.3c4.4%200%208-3.6%208-8s-3.6-8-8-8H41c-4.4%200-8%203.6-8%208V129c0%204.4%203.6%208%208%208zm430%20238c-4.4%200-8%203.6-8%208v43.8h-60.8c-4.4%200-8%203.6-8%208s3.6%208%208%208H471c4.4%200%208-3.6%208-8V383c0-4.4-3.6-8-8-8zm0-305.8h-68.8c-4.4%200-8%203.6-8%208s3.6%208%208%208H463V129c0%204.4%203.6%208%208%208s8-3.6%208-8V77.2c0-4.4-3.6-8-8-8z%22%2F%3E%3C%2Fsvg%3E");
+  width: 36px;
+  height: 36px;
+  /* 2215->15px */
 }
 
 #options-wrapper {
   position: absolute;
   top: calc(48.4%);
-  left: calc(50% + 18pt);
+  left: calc(50% + 20pt);
 }
 
 .option-container {
@@ -50,42 +84,47 @@ p {
   font-family: "Nunito";
   background: linear-gradient(
     90deg,
-    rgba(20, 20, 20, 0.7) 0%,
-    rgba(20, 20, 20, 0.6) 66%,
-    rgba(47, 48, 53, 0) 100%
+    rgba(136, 136, 136, 0.7) 0%,
+    rgba(31, 38, 92, 0.8) 55%,
+    rgba(0, 4, 31, 0.1) 100%
   );
-  font-size: 11pt;
-  line-height: 22pt;
+  font-size: 12pt;
+  line-height: 28pt;
+  border-radius: 6px;
   vertical-align: middle;
-  margin: 2pt;
+  margin: 3pt;
   transition: 300ms;
-  transform-origin: left top;
+  transform-origin: left bottom;
   scale: 1;
   height: 22pt;
-  width: 150pt;
+  width: 160pt;
   top: 0;
 }
 
 .option-container:hover {
   background: linear-gradient(
-    90deg,
-    rgba(30, 30, 30, 0.7) 0%,
-    rgba(30, 30, 30, 0.6) 66%,
-    rgba(57, 58, 63, 0) 100%
+    -90deg,
+    rgba(136, 136, 136, 0.1) 0%,
+    rgba(31, 38, 92, 0.9) 55%,
+    rgba(0, 4, 31, 0.8) 100%
   );
-  transform-origin: left top;
-  color: var(--color-hover);
+  transition: 300ms;
+  transform-origin: left bottom;
+  box-shadow: -6px 0px 12px 1px #6976d875;
+  color: #ffbdc9;
+  font-weight: 900;
   margin-left: 4pt;
+  border-left: 5px groove #f5072f;
 }
 
 .option-icon {
-  font-size: 12pt;
+  font-size: 14pt;
   line-height: 22pt;
   width: 14pt;
-  margin: 5pt;
+  margin: 6pt;
   color: var(--color-default);
 }
 
 .option-label {
-  font-weight: 500;
+  font-weight: 600;
 }
